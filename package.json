@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "graphql-context-services",
+  "description": "GraphQL example using Context & Services",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "per-env",
+    "start:development": "node -r esm server"
+  },
+  "dependencies": {
+    "esm": "^3.0.84",
+    "express": "^4.16.4",
+    "express-graphql": "^0.6.12",
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.10.0",
+    "graphql-tools": "^4.0.1",
+    "per-env": "^1.0.2"
+  },
+  "devDependencies": {
+    "piping": "^1.0.0-rc.4"
+  }
+}
