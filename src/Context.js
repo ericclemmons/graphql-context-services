@@ -6,7 +6,7 @@ export default class Context {
     this.services = {}
 
     // ! This is explicitly doing what Apollo Server does for `dataSources`
-    // internally, as documented here:
+    // ! internally, as documented here:
     // > https://github.com/apollographql/apollo-server/blob/master/docs/source/features/data-sources.md#accessing-data-sources-from-resolvers
     for (const [name, Service] of Object.entries(services)) {
       const service = new Service()
