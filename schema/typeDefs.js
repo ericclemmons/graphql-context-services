@@ -1,19 +1,19 @@
 import gql from "graphql-tag"
 
-// Type definitions define the "shape" of your data and specify
-// which ways the data can be fetched from the GraphQL server.
 export default gql`
-  # Comments in GraphQL are defined with the hash (#) symbol.
-
-  # This "Book" type can be used in other type declarations.
-  type Book {
-    title: String
-    author: String
+  type GitHub {
+    rateLimit: RateLimit!
   }
 
-  # The "Query" type is the root of all GraphQL queries.
-  # (A "Mutation" type will be covered later on.)
+  type RateLimit {
+    limit: Int!
+    remaining: Int!
+    reset: Int!
+  }
+
   type Query {
-    books: [Book]
+    ip: String!
+    github: GitHub!
+    version: String!
   }
 `

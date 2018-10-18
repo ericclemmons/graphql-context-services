@@ -9,6 +9,7 @@
     "start:development": "node -r esm server"
   },
   "dependencies": {
+    "apollo-datasource-rest": "^0.1.5",
     "esm": "^3.0.84",
     "express": "^4.16.4",
     "express-graphql": "^0.6.12",
