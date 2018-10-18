@@ -5,6 +5,7 @@ import Context from "./Context"
 import schema from "./schema"
 
 export default express()
+  .set("trust proxy", true)
   .get("/", (req, res) => res.redirect("/graphql"))
   .use(
     "/graphql",
