@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "per-env",
-    "start:development": "node -r esm server"
+    "start:development": "node -r esm src/server"
   },
   "dependencies": {
     "apollo-datasource-rest": "^0.1.5",
